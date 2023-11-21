@@ -1,12 +1,15 @@
 // import logo from "./logo.svg";
-import Navbar from "./components/navbar.jsx";
+
+import TopNavbar from "./components/Nav/TopNavbar.jsx";
 import "./App.css";
+import Hero from "./components/Sections/Hero.jsx";
 
 function App() {
   return (
     <div className="App">
       <div>
-        <Navbar />
+        <TopNavbar />
+        <Hero />
       </div>
     </div>
   );

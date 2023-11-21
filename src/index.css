@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,7 +53,7 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #fff;
 }
 body {
-  background: #fff;
+  background: #ffffff;
   color: #0B093B;
   font-family: 'Khula', sans-serif;
   overflow-x: hidden;

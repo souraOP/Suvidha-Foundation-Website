@@ -82,7 +82,7 @@ export default function TopNavbar() {
             </li>
             <li className="semiBold font15 pointer flexCenter">
               <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
-                Get Started
+                Sign Up
               </a>
             </li>
           </UlWrapperRight>
@@ -98,6 +98,7 @@ const Wrapper = styled.nav`
   top: 0;
   left: 0;
   z-index: 999;
+
 `;
 const NavInner = styled.div`
   position: relative;

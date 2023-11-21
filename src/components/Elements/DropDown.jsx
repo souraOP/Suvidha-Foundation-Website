@@ -1,11 +1,26 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Dropdown = ({ label, children }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const toggleDropdown = () => setShowDropdown(!showDropdown);
+
+  useEffect(() => {
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.dropdown-container') && showDropdown) {
+        setShowDropdown(false);
+      }
+    });
+    return () => {
+      document.removeEventListener('click', (event) => {
+        if (!event.target.closest('.dropdown-container') && showDropdown) {
+          setShowDropdown(false);
+        }
+      });
+    };
+  }, [showDropdown]);
 
   return (
     <DropdownContainer>
@@ -35,7 +50,7 @@ const DropdownContent = styled.ul`
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   list-style: none;

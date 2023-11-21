@@ -3,16 +3,16 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
-import LogoIcon from "../../assets/svg/Logo";
+
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-          <LogoIcon />
+
           <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
+            Suvidha Foundation
           </h1>
         </div>
         <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
@@ -32,7 +32,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Home
+            Study Abroad
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -46,7 +46,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Services
+            IELTS
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -60,7 +60,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Projects
+            Events
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -74,7 +74,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Blog
+            Scholarships
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -88,7 +88,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Pricing
+            About
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -114,7 +114,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
         <li className="semiBold font15 pointer flexCenter">
           <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
-            Get Started
+            Sign Up
           </a>
         </li>
       </UlStyle>
